@@ -27,4 +27,7 @@
   <% if (config.simple_japanese.custom_assets.js) { %>
     <%- js(config.simple_japanese.custom_assets.js) %>
   <% } %>
+  <% if (config.baidu_site_verification){ %>
+    <meta name="baidu-site-verification" content="<%= config.baidu_site_verification %>" />
+  <% } %> 
 </head>
